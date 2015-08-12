@@ -50,9 +50,37 @@
 				background-position: 0 40%;
 				background-color: rgba(200,200,200,0.5);
 			}
-			.btn{
-				border-radius: 10px;
-			}
+			.btn-custom {
+  background-color: #b22222;
+  border-color: #b22222;
+  color: white;
+  border-radius: 15px;
+}
+.btn-custom:hover,
+.btn-custom:focus,
+.btn-custom:active,
+.btn-custom.active {
+  background-color: #9d1e1e;
+  border-color: #871a1a;
+}
+.btn-custom.disabled:hover,
+.btn-custom.disabled:focus,
+.btn-custom.disabled:active,
+.btn-custom.disabled.active,
+.btn-custom[disabled]:hover,
+.btn-custom[disabled]:focus,
+.btn-custom[disabled]:active,
+.btn-custom[disabled].active,
+fieldset[disabled] .btn-custom:hover,
+fieldset[disabled] .btn-custom:focus,
+fieldset[disabled] .btn-custom:active,
+fieldset[disabled] .btn-custom.active {
+  background-color: #b22222;
+  border-color: #b22222;
+}
+
+
+
   		</style>
   		<!-- firebrick dimgray -->
   	<body>
@@ -60,7 +88,7 @@
 		<nav class="navbar navbar-default navbar-fixed-top" style="height:100px; background:white;">
 		  	<div class="container" style="height:100%;">
 		    	<div class="navbar-header" style="height:100%;">
-			      	<a class="navbar-brand" href="#">
+			      	<a class="navbar-brand" href="#player">
 			      		<h3 style="color:firebrick;">#SAVETHECROPTOP</h3>
 			    	</a>
 			    </div>
@@ -92,8 +120,9 @@
 				  playerVars: { 'autoplay': 1, 'controls': 2,'autohide':1,'wmode':'opaque','loop':1,'playlist':'OM3tIK7U4JM','modestbranding':1,'rel':0, 'showinfo':0 },
 				  videoId: 'OM3tIK7U4JM',
 				  events: {
-				    'onReady': onPlayerReady}
-				});
+				    'onReady': onPlayerReady
+					}
+					});
 				}
 
 				// 4. The API will call this function when the video player is ready.
@@ -137,7 +166,9 @@
 						</strong>
 					</p>
 				</div>
-				<a href="https://www.change.org/p/ncaa-change-the-rule-to-ban-crop-tops?just_created=true>"><button  class="btn btn-danger col-md-3 col-md-offset-1" style="margin-top:70px;"><h2>Sign the Petition &rarr;</h2></button></a>
+				<a href="https://www.change.org/p/ncaa-change-the-rule-to-ban-crop-tops?just_created=true>">
+					<button  class="btn-custom col-md-3 col-md-offset-1" style="margin-top:70px;padding-bottom:10px;"><h2>Sign the Petition &rarr;</h2></button>
+				</a>
 			</div>
 		</div>
 		
@@ -145,11 +176,13 @@
 		<div id="purchase" class="container-fluid" style="margin-top:100px;margin-bottom:150px;">
 			<center>
 				<img src="http://media.ycmc.com/media/catalog/product/cache/1/image/9df78eab33525d08d6e5fb8d27136e95/c/l/cll_t4936_red_vicious_jersey_crop_red14020317004916174.jpg" 
-					style="margin-bottom:20px; -webkit-mask-image: -webkit-gradient(linear, left 99%, left bottom, from(rgba(0,0,0,1)), to(rgba(0,0,0,0)))"
+					style="margin-bottom:20px; -webkit-mask-image: -webkit-gradient(linear, left 97%, left bottom, from(rgba(0,0,0,1)), to(rgba(0,0,0,0)))"
 					width="300">
 			</center>
 			<h2 class="text-center text-uppercase" style="color:firebrick; margin-bottom:40px;"><strong>Become your own hero in a half shirt</strong></h2>
-			<a href="https://www.etsy.com/listing/241644787/ezekiel-elliott-crop-top-jersey?ref=shop_home_active_1"><button  class="btn btn-danger col-md-8 col-md-offset-2 text-uppercase"><h2>Get a crop top</h2></button></a>
+			<a href="https://www.etsy.com/listing/241644787/ezekiel-elliott-crop-top-jersey?ref=shop_home_active_1">
+				<button  class="btn-custom col-md-8 col-md-offset-2 text-uppercase"><h2>Get a crop top</h2></button>
+			</a>
 			
 		</div>
 
